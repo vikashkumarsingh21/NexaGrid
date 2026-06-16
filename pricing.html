@@ -109,41 +109,52 @@
 
 <!-- ===================== NAVBAR ===================== -->
 <header>
-  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
-    <div class="nav-inner">
-      <a class="nav-logo" href="index.html" aria-label="NexaGrid Home">
-        <div class="nav-logo-icon" aria-hidden="true">⬡</div>
-        NexaGrid
-      </a>
-      <ul class="nav-links" role="list">
-        <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link" href="services.html">Services</a></li>
-        <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-        <li><a class="nav-link" href="case-studies.html">Case Studies</a></li>
-        <li><a class="nav-link active" href="pricing.html">Pricing</a></li>
-        <li><a class="nav-link" href="about.html">About</a></li>
-        <li><a class="nav-link" href="blog.html">Blog</a></li>
-      </ul>
-      <div class="nav-cta">
-        <a class="btn btn-primary btn-sm" href="contact.html">Get Free Consultation</a>
-      </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo" aria-label="NexaGrid — Home">
+          <div class="nav-logo-icon" aria-hidden="true">⚡</div>
+          NexaGrid
+        </a>
 
-  <div class="nav-mobile" id="navMobile" role="dialog" aria-label="Mobile navigation">
-    <a class="nav-link" href="index.html">Home</a>
-    <a class="nav-link" href="services.html">Services</a>
-    <a class="nav-link" href="portfolio.html">Portfolio</a>
-    <a class="nav-link" href="case-studies.html">Case Studies</a>
-    <a class="nav-link active" href="pricing.html">Pricing</a>
-    <a class="nav-link" href="about.html">About</a>
-    <a class="nav-link" href="blog.html">Blog</a>
-    <a class="btn btn-primary" href="contact.html">Get Free Consultation</a>
-  </div>
-</header>
+        <!-- Desktop Links -->
+        <ul class="nav-links" role="list">
+          <li><a href="index.html"         class="nav-link" aria-label="Home">Home</a></li>
+          <li><a href="services.html"      class="nav-link" aria-label="Services">Services</a></li>
+          <li><a href="portfolio.html"     class="nav-link" aria-label="Portfolio">Portfolio</a></li>
+          <li><a href="case-studies.html"  class="nav-link" aria-label="Case Studies">Case Studies</a></li>
+          <li><a href="pricing.html"       class="nav-link" aria-label="Pricing">Pricing</a></li>
+          <li><a href="about.html"         class="nav-link" aria-label="About">About</a></li>
+          <li><a href="contact.html"       class="nav-link active" aria-label="Contact" aria-current="page">Contact</a></li>
+        </ul>
+
+        <!-- Desktop CTA -->
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-primary btn-sm">Get Free Quote</a>
+        </div>
+
+        <!-- Hamburger -->
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMobile">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="nav-mobile" id="navMobile" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+      <a href="index.html"        class="nav-link">Home</a>
+      <a href="services.html"     class="nav-link">Services</a>
+      <a href="portfolio.html"    class="nav-link">Portfolio</a>
+      <a href="case-studies.html" class="nav-link">Case Studies</a>
+      <a href="pricing.html"      class="nav-link">Pricing</a>
+      <a href="about.html"        class="nav-link">About</a>
+      <a href="contact.html"      class="nav-link active" aria-current="page">Contact</a>
+      <a href="contact.html"      class="btn btn-primary">Get Free Quote</a>
+    </div>
+  </header>
+
 
 <main id="main-content">
 

@@ -1,0 +1,40 @@
+{
+  "name": "NexaGrid — Web, App, AI & IoT Solutions",
+  "short_name": "NexaGrid",
+  "description": "NexaGrid is a premium digital agency in Patna, Bihar offering web development, mobile app development, SEO services, AI automation and IoT solutions.",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#060B18",
+  "theme_color": "#5B6EF5",
+  "lang": "en-IN",
+  "dir": "ltr",
+  "categories": ["business", "technology", "productivity"],
+  "icons": [
+    {
+      "src": "/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

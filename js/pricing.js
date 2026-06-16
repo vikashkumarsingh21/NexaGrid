@@ -30,6 +30,7 @@ function initPricingToggle() {
   const btnYearly  = document.getElementById('toggleYearly');
   const track      = document.getElementById('prToggle');
   const amounts    = document.querySelectorAll('.pr-plan-amount');
+  const saveBadge  = document.querySelector('.pr-toggle-save');
 
   if (!btnMonthly || !btnYearly || !track) return;
 
@@ -60,6 +61,7 @@ function initPricingToggle() {
 
     track.classList.toggle('annual', yearly);
     track.setAttribute('aria-checked', String(yearly));
+    saveBadge?.classList.toggle('hidden', yearly);
 
     amounts.forEach(el => {
       const val = yearly ? el.dataset.yearly : el.dataset.monthly;
@@ -228,8 +230,9 @@ function initROICalculator() {
     /* Show CTA */
     elCTA.style.display = 'block';
     elCTA.style.opacity = '0';
+    void elCTA.offsetHeight; /* force layout so display:block is committed before the transition starts */
+    elCTA.style.transition = 'opacity 0.4s ease';
     requestAnimationFrame(() => {
-      elCTA.style.transition = 'opacity 0.4s ease';
       elCTA.style.opacity = '1';
     });
 
@@ -256,19 +259,27 @@ function initRangeDisplays() {
 
   if (!leadsRange || !saleRange || !growthRange) return;
 
+function setFill(input) {
+    const pct = ((input.value - input.min) / (input.max - input.min)) * 100;
+    input.style.setProperty('--roi-fill', pct + '%');
+  }
+
   function updateLeads() {
     leadsVal.textContent = leadsRange.value;
     leadsRange.setAttribute('aria-valuenow', leadsRange.value);
+    setFill(leadsRange);
   }
 
   function updateSale() {
     saleVal.textContent = '₹' + Number(saleRange.value).toLocaleString('en-IN');
     saleRange.setAttribute('aria-valuenow', saleRange.value);
+    setFill(saleRange);
   }
 
   function updateGrowth() {
     growthVal.textContent = growthRange.value + '%';
     growthRange.setAttribute('aria-valuenow', growthRange.value);
+    setFill(growthRange);
   }
 
   leadsRange.addEventListener('input',  updateLeads);
@@ -499,5 +510,4 @@ document.addEventListener('DOMContentLoaded', () => {
   initProgressBars();
   initMobileNav();
   initSmoothScroll();
-  initActiveNav();
 });
