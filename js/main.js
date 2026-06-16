@@ -6,28 +6,11 @@
 'use strict';
 
 /* ---- Navbar ---- */
-const navbar   = document.getElementById('navbar');
-const toggle   = document.getElementById('navToggle');
-const mobileMenu = document.getElementById('navMobile');
+const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 30);
+  navbar?.classList.toggle('scrolled', window.scrollY > 30);
 }, { passive: true });
-
-toggle?.addEventListener('click', () => {
-  toggle.classList.toggle('open');
-  mobileMenu.classList.toggle('open');
-  document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
-});
-
-// Close mobile menu on link click
-mobileMenu?.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    toggle.classList.remove('open');
-    mobileMenu.classList.remove('open');
-    document.body.style.overflow = '';
-  });
-});
 
 /* ---- Hero Canvas (dot grid) ---- */
 (function initCanvas() {
@@ -142,86 +125,10 @@ mobileMenu?.querySelectorAll('a').forEach(link => {
   els.forEach(el => io.observe(el));
 })();
 
-/* ---- Counter Animation ---- */
-(function initCounters() {
-  const counters = document.querySelectorAll('[data-count]');
-  if (!counters.length) return;
 
-  function animateCounter(el) {
-    const target   = parseFloat(el.dataset.count);
-    const suffix   = el.dataset.suffix || '';
-    const prefix   = el.dataset.prefix || '';
-    const decimals = el.dataset.decimals ? parseInt(el.dataset.decimals) : 0;
-    const duration = 2000;
-    const start    = performance.now();
 
-    function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
 
-    function tick(now) {
-      const elapsed  = now - start;
-      const progress = Math.min(elapsed / duration, 1);
-      const value    = target * easeOut(progress);
-      el.textContent = prefix + value.toFixed(decimals) + suffix;
-      if (progress < 1) requestAnimationFrame(tick);
-    }
 
-    requestAnimationFrame(tick);
-  }
-
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        animateCounter(e.target);
-        io.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.5 });
-
-  counters.forEach(el => io.observe(el));
-})();
-
-/* ---- Progress Bars (Why section) ---- */
-(function initBars() {
-  const bars = document.querySelectorAll('.why-bar-fill[data-width]');
-  if (!bars.length) return;
-
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.style.width = e.target.dataset.width;
-        io.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.4 });
-
-  bars.forEach(b => { b.style.width = '0%'; io.observe(b); });
-})();
-
-/* ---- FAQ Accordion ---- */
-(function initFAQ() {
-  const items = document.querySelectorAll('.faq-item');
-  items.forEach(item => {
-    const question = item.querySelector('.faq-question');
-    const answer   = item.querySelector('.faq-answer');
-
-    question?.addEventListener('click', () => {
-      const isOpen = item.classList.contains('open');
-
-      // Close all
-      items.forEach(i => {
-        i.classList.remove('open');
-        const a = i.querySelector('.faq-answer');
-        if (a) a.style.maxHeight = '0';
-      });
-
-      // Open clicked (if it was closed)
-      if (!isOpen) {
-        item.classList.add('open');
-        answer.style.maxHeight = answer.scrollHeight + 'px';
-      }
-    });
-  });
-})();
 
 /* ---- Active nav link ---- */
 (function initActiveNav() {
