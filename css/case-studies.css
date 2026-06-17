@@ -1,5 +1,5 @@
 /* ============================================================
-   NexaGrid — case-studies.css
+   Axivon Technologies — case-studies.css
    Only styles for classes NOT present in main.css.
    All design tokens (colors, spacing, type, radii, shadows,
    transitions, buttons, glass-card, .reveal, .section,
@@ -712,20 +712,7 @@
   display: none;
 }
 
-.pf-card.cs-card.filtering-out {
-  opacity: 0;
-  transform: translateY(12px) scale(0.97);
-  pointer-events: none;
-}
 
-.pf-card.cs-card.filtering-in {
-  animation: cs-filterIn 0.35s var(--ease-out) both;
-}
-
-@keyframes cs-filterIn {
-  from { opacity: 0; transform: translateY(16px) scale(0.97); }
-  to   { opacity: 1; transform: translateY(0) scale(1); }
-}
 
 /* Card image */
 .pf-card-image {
@@ -1141,7 +1128,7 @@
 }
 
 /* ============================================================
-   9. WHY NEXAGRID
+   9. WHY Axivon Technologies
    ============================================================ */
 .cs-why {
   background: var(--clr-bg-2);

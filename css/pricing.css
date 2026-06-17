@@ -1,5 +1,5 @@
 /* ============================================================
-   NexaGrid — pricing.css
+   Axivon Technologies — pricing.css
    Pricing-page-specific styles only.
    All tokens, resets, typography, .btn-*, .glass-card,
    .section, .section-title, .section-subtitle, .section-label,
@@ -1481,4 +1481,60 @@
   gap: var(--space-4);
   justify-content: center;
   margin-top: var(--space-2);
+}
+
+
+/* pr-compare
+   Section wrapper for the feature comparison table.
+   Alternating background for visual separation. */
+.pr-compare {
+  background: var(--clr-bg-2);
+}
+
+/* pr-plan-price-custom
+   Modifier on .pr-plan-price for the "Custom" plan column.
+   No numeric price to display — renders "Custom Quote" style text. */
+.pr-plan-price-custom {
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.pr-plan-price-custom .pr-plan-currency,
+.pr-plan-price-custom .pr-plan-amount {
+  display: none;
+}
+
+/* pr-roi-panel-title
+   h3 title used in both .pr-roi-inputs and .pr-roi-results panels.
+   Mirrors the existing descendant rules (.pr-roi-inputs h3 /
+   .pr-roi-results h3) as a portable class. */
+.pr-roi-panel-title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-2);
+  color: var(--clr-text);
+}
+
+/* pr-service-cta
+   CTA wrapper div after the service pricing grid.
+   Adds visual separation from the grid above it. */
+.pr-service-cta {
+  border-top: 1px solid var(--clr-border);
+  padding-top: var(--space-8);
+  margin-top: var(--space-8);
+}
+
+/* pr-tr-cta
+   Table row containing the per-plan CTA buttons in the comparison table.
+   Visually separates the action row from data rows. */
+.pr-tr-cta {
+  border-top: 2px solid var(--clr-border-2);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.pr-tr-cta td {
+  padding-block: var(--space-5);
+  text-align: center;
 }

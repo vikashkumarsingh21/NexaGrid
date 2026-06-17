@@ -1,5 +1,5 @@
 /* ============================================================
-   NexaGrid — case-studies.js
+   Axivon Technologies — case-studies.js
    Filters · Counters · FAQ · Reveal · Progress Bars ·
    Modal · Mobile Nav · Active Nav · Smooth Scroll
    ============================================================ */
@@ -252,7 +252,7 @@ const CS_DATA = {
   medicare: {
     tag:     'Healthcare · Mobile App · Web Portal',
     title:   'MediCare Plus Patient Booking Platform',
-    summary: 'Patna multi-specialty clinic chain with 4 locations had zero digital presence. Over 60% of after-hours appointment inquiries were lost because patients could not book online. NexaGrid designed and built a full patient management ecosystem: a cross-platform mobile app, web portal, WhatsApp integration and automated reminders.',
+    summary: 'Patna multi-specialty clinic chain with 4 locations had zero digital presence. Over 60% of after-hours appointment inquiries were lost because patients could not book online. Axivon Technologies designed and built a full patient management ecosystem: a cross-platform mobile app, web portal, WhatsApp integration and automated reminders.',
     metrics: [
       { value: '3X',     label: 'Appointment Growth'  },
       { value: '12,000+',label: 'Active App Users'    },
@@ -269,7 +269,7 @@ const CS_DATA = {
   eduspark: {
     tag:     'Education · LMS · Mobile App',
     title:   'EduSpark Online Learning Platform',
-    summary: 'Bihar coaching institute needed to serve students digitally during and post-pandemic. The existing setup was entirely offline with no way to deliver content, track progress or collect fees online. NexaGrid built a full-stack LMS with video delivery, live classes, quiz engine and a mobile app.',
+    summary: 'Bihar coaching institute needed to serve students digitally during and post-pandemic. The existing setup was entirely offline with no way to deliver content, track progress or collect fees online. Axivon Technologies built a full-stack LMS with video delivery, live classes, quiz engine and a mobile app.',
     metrics: [
       { value: '5X',    label: 'Student Reach'          },
       { value: '8,500+',label: 'Enrolled Students'      },
@@ -286,7 +286,7 @@ const CS_DATA = {
   grillhouse: {
     tag:     'Restaurant · Website · Online Ordering',
     title:   'GrillHouse Online Ordering & Table Booking',
-    summary: 'Premium restaurant in Patna had zero online orders and relied on phone-only reservations — staff spent 3 hours/day managing calls. NexaGrid built a branded ordering site, integrated Zomato-style menu management, table reservation and WhatsApp order notifications.',
+    summary: 'Premium restaurant in Patna had zero online orders and relied on phone-only reservations — staff spent 3 hours/day managing calls. Axivon Technologies built a branded ordering site, integrated Zomato-style menu management, table reservation and WhatsApp order notifications.',
     metrics: [
       { value: '4X',    label: 'Online Revenue'     },
       { value: '₹12L',  label: 'Monthly Orders'     },
@@ -320,7 +320,7 @@ const CS_DATA = {
   stayease: {
     tag:     'Hospitality · Hotel Booking · Mobile App',
     title:   'StayEase Direct Booking Platform',
-    summary: '3-property hotel group was paying 18% OTA commission on every booking — over ₹8L/year lost to platforms. NexaGrid built a direct booking engine with dynamic pricing, WhatsApp check-in, loyalty points and a management dashboard.',
+    summary: '3-property hotel group was paying 18% OTA commission on every booking — over ₹8L/year lost to platforms. Axivon Technologies built a direct booking engine with dynamic pricing, WhatsApp check-in, loyalty points and a management dashboard.',
     metrics: [
       { value: '65%',  label: 'Direct Bookings'      },
       { value: '₹8L',  label: 'OTA Commission Saved' },
@@ -337,7 +337,7 @@ const CS_DATA = {
   factoryos: {
     tag:     'IoT · Manufacturing · AI Alerts',
     title:   'FactoryOS Machine Monitoring Platform',
-    summary: 'Patna-based manufacturing unit was losing ₹3L/month to unexpected machine failures with no early-warning system. NexaGrid deployed 200+ IoT sensors, built a real-time monitoring dashboard and trained an ML model to predict failures 48 hours in advance.',
+    summary: 'Patna-based manufacturing unit was losing ₹3L/month to unexpected machine failures with no early-warning system. Axivon Technologies deployed 200+ IoT sensors, built a real-time monitoring dashboard and trained an ML model to predict failures 48 hours in advance.',
     metrics: [
       { value: '42%',  label: 'Downtime Reduction' },
       { value: '200+', label: 'Sensors Connected'  },
@@ -354,7 +354,7 @@ const CS_DATA = {
   leadbot: {
     tag:     'AI · Chatbot · CRM Automation',
     title:   'LeadBot AI Lead Capture Automation',
-    summary: 'Real estate company was missing 70% of leads that arrived after business hours — no one was answering inquiries at night. NexaGrid built an AI chatbot integrated with their CRM, WhatsApp and email, qualifying leads and booking site visits automatically 24/7.',
+    summary: 'Real estate company was missing 70% of leads that arrived after business hours — no one was answering inquiries at night. Axivon Technologies built an AI chatbot integrated with their CRM, WhatsApp and email, qualifying leads and booking site visits automatically 24/7.',
     metrics: [
       { value: '3.2X', label: 'Lead Conversion'    },
       { value: '70%',  label: 'After-hours Capture' },

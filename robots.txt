@@ -1,5 +1,5 @@
 # ============================================================
-# robots.txt — NexaGrid (https://nexagrid.in)
+# robots.txt — Axivon Technologies (https://Axivon Technologies.in)
 # Digital Agency | Patna, Bihar, India
 # ============================================================
 
@@ -81,4 +81,4 @@ User-agent: Meta-ExternalAgent
 Allow: /
 
 # ---- Sitemap location ----
-Sitemap: https://nexagrid.in/sitemap.xml
+Sitemap: https://Axivon Technologies.in/sitemap.xml

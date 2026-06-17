@@ -1,5 +1,5 @@
 /* ============================================================
-   NexaGrid — about.css
+   Axivon Technologies — about.css
    About page-specific styles
    All design tokens, resets, utilities, nav, footer,
    buttons, glass-card, service-card, why-section,
@@ -890,3 +890,56 @@
 .skip-link:focus { top: 0; }
 
 /* Reduced motion override handled globally in main.css */
+
+
+   Wrapper for the 6 value cards.
+   about.css comments say "Reuse services-grid" but never defines it. */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+@media (max-width: 960px) { .values-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .values-grid { grid-template-columns: 1fr; } }
+
+
+/* value-icon
+   Icon element inside .value-card.
+   Mirrors .service-icon from home.css (referenced in about.css comments). */
+.value-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: var(--space-5);
+  flex-shrink: 0;
+}
+
+.value-icon.indigo { background: rgba(91,110,245,0.15);  color: var(--clr-primary-2); border: 1px solid rgba(91,110,245,0.25); }
+.value-icon.cyan   { background: rgba(0,229,255,0.1);    color: var(--clr-accent);    border: 1px solid rgba(0,229,255,0.2);  }
+.value-icon.violet { background: rgba(155,111,255,0.12); color: var(--clr-violet);    border: 1px solid rgba(155,111,255,0.25);}
+.value-icon.green  { background: rgba(0,255,178,0.1);    color: var(--clr-green);     border: 1px solid rgba(0,255,178,0.2);  }
+.value-icon.orange { background: rgba(255,150,50,0.12);  color: #FF9632;              border: 1px solid rgba(255,150,50,0.25);}
+.value-icon.pink   { background: rgba(255,80,160,0.1);   color: #FF50A0;              border: 1px solid rgba(255,80,160,0.2); }
+
+
+/* timeline-line
+   Vertical connector line inside .timeline-marker, drawn between dots. */
+.timeline-line {
+  width: 2px;
+  flex: 1;
+  min-height: 40px;
+  background: linear-gradient(to bottom, var(--clr-primary), transparent);
+  margin: var(--space-2) auto 0;
+  opacity: 0.35;
+  border-radius: 2px;
+}
+
+/* Hide line on the last timeline item (no .timeline-line rendered there) */
+.timeline-item:last-child .timeline-line {
+  display: none;
+}

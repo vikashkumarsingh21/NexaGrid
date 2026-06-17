@@ -1,5 +1,5 @@
 /* ============================================================
-   NexaGrid — pricing.js
+   Axivon Technologies — pricing.js
    Pricing toggle, counters, ROI calculator, FAQ, reveal,
    progress bars, mobile nav, smooth scroll, CTA tracking
    ============================================================ */

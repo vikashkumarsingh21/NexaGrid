@@ -1,5 +1,5 @@
 /* ============================================================
-   NexaGrid — portfolio.css
+   Axivon Technologies — portfolio.css
    Portfolio page styles — inherits all tokens from main.css
    Never redefines colors, fonts, spacing, or component base
    ============================================================ */
@@ -1092,4 +1092,22 @@
 /* ============ ACCESSIBILITY ============ */
 @media (prefers-reduced-motion: reduce) {
   .pf-hero-badge-dot { animation: none; }
+}
+
+/* ── portfolio.css ─────────────────────────────────────────── */
+
+/* pf-grid-section
+   Section wrapper for the main project grid.
+   Carries class="pf-grid-section section" — section provides padding,
+   this class supplies the background. */
+.pf-grid-section {
+  background: var(--clr-bg-2);
+}
+
+/* pf-industries
+   Section wrapper for the industries served block.
+   Has an inline background style as fallback; this class ensures
+   the rule is addressable from CSS without relying on inline styles. */
+.pf-industries {
+  background: var(--clr-bg-2);
 }

@@ -1,5 +1,5 @@
 /* ============================================================
-   NexaGrid — main.js
+   Axivon Technologies — main.js
    Navigation, animations, counters, canvas, FAQ, scroll reveal
    ============================================================ */
 

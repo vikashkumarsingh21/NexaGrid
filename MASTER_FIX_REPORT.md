@@ -1,4 +1,4 @@
-# MASTER FIX REPORT: NexaGrid Complete Health Check
+# MASTER FIX REPORT: Axivon Technologies Complete Health Check
 
 This is the comprehensive audit report detailing all structural, stylistic, programmatic, and performance issues discovered during the full-project health check.
 
@@ -12,7 +12,7 @@ This is the comprehensive audit report detailing all structural, stylistic, prog
 
 ## ⚠️ Major Issues
 - **Broken Internal Links**: A link to `blog.html` is present in the navigation/footer across `404.html`, `about.html`, `case-studies.html`, `index.html`, `portfolio.html`, `pricing.html`, and `services.html`, but the file `blog.html` does not exist.
-- **SEO Canonical Mismatch**: The `robots.txt` specifies the sitemap at `https://nexagrid.in/sitemap.xml`, but the HTML canonical tags explicitly declare `https://www.nexagrid.in/`. This `www` vs non-`www` inconsistency will confuse search engine indexing.
+- **SEO Canonical Mismatch**: The `robots.txt` specifies the sitemap at `https://Axivon Technologies.in/sitemap.xml`, but the HTML canonical tags explicitly declare `https://www.Axivon Technologies.in/`. This `www` vs non-`www` inconsistency will confuse search engine indexing.
 - **Missing CSS Classes**: 11 HTML classes are referenced in the DOM but are never defined in any CSS file, causing broken styling.
 - **Performance - Heavy Canvas Loop**: The hero canvas animation in `main.js` runs a continuous `requestAnimationFrame` loop even when the hero section is scrolled out of view. This causes unnecessary CPU/GPU drain on low-end devices.
 

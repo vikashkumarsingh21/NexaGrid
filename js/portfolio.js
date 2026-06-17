@@ -1,5 +1,5 @@
 /* ============================================================
-   NexaGrid — portfolio.js
+   Axivon Technologies — portfolio.js
    Portfolio filter system
    ============================================================ */
 'use strict';
