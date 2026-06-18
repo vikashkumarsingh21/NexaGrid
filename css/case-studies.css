@@ -12,11 +12,11 @@
    SHARED COLOUR TOKENS (icon colour variants)
    Pattern mirrors services.css — not in main.css
    ============================================================ */
-.indigo  { background: rgba(91,110,245,0.15);  color: var(--clr-primary-2); border: 1px solid rgba(91,110,245,0.25); }
+
 .cyan    { background: rgba(0,229,255,0.10);    color: var(--clr-accent);    border: 1px solid rgba(0,229,255,0.20);  }
-.violet  { background: rgba(155,111,255,0.12);  color: var(--clr-violet);    border: 1px solid rgba(155,111,255,0.25);}
+
 .green   { background: rgba(0,255,178,0.10);    color: var(--clr-green);     border: 1px solid rgba(0,255,178,0.20);  }
-.orange  { background: rgba(255,150,50,0.12);   color: #FF9632;              border: 1px solid rgba(255,150,50,0.25); }
+
 .sky     { background: rgba(56,189,248,0.10);   color: #38BDF8;              border: 1px solid rgba(56,189,248,0.20); }
 .amber   { background: rgba(251,191,36,0.10);   color: #FBBF24;              border: 1px solid rgba(251,191,36,0.20); }
 .rose    { background: rgba(244,63,94,0.10);    color: #F43F5E;              border: 1px solid rgba(244,63,94,0.20);  }
@@ -100,18 +100,15 @@
 }
 
 @keyframes cs-pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: 0.5; transform: scale(0.85); }
+
 }
 
 @keyframes cs-fadeDown {
-  from { opacity: 0; transform: translateY(-14px); }
-  to   { opacity: 1; transform: translateY(0); }
+
 }
 
 @keyframes cs-fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to   { opacity: 1; transform: translateY(0); }
+
 }
 
 /* Hero headline */
@@ -179,14 +176,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
-
-.pf-stat-label {
-  display: block;
-  font-size: var(--text-xs);
-  color: var(--clr-muted);
-  font-weight: 500;
-  margin-top: 2px;
 }
 
 .pf-stat-sep {
@@ -351,7 +340,7 @@
   margin-bottom: var(--space-5);
 }
 
-.cs-feat-tag.indigo { background: rgba(91,110,245,0.12); color: var(--clr-primary-2); border: 1px solid rgba(91,110,245,0.22); }
+.cs-feat-tag
 
 .cs-feat-heading {
   font-family: var(--font-display);
@@ -511,9 +500,9 @@
   transition: transform var(--duration-base) var(--ease-out);
 }
 
-.cs-timeline-dot.indigo { background: var(--clr-primary); box-shadow: 0 0 12px rgba(91,110,245,0.6); }
+.cs-timeline-dot
 .cs-timeline-dot.cyan   { background: var(--clr-accent);  box-shadow: 0 0 12px rgba(0,229,255,0.6);  }
-.cs-timeline-dot.violet { background: var(--clr-violet);  box-shadow: 0 0 12px rgba(155,111,255,0.6);}
+.cs-timeline-dot
 .cs-timeline-dot.green  { background: var(--clr-green);   box-shadow: 0 0 12px rgba(0,255,178,0.6);  }
 
 .cs-timeline-item:hover .cs-timeline-dot { transform: scale(1.3); }
@@ -594,11 +583,11 @@
   color: #fff;
 }
 
-.pf-testi-avatar.indigo { background: var(--grad-primary); }
+.pf-testi-avatar
 .pf-testi-avatar.cyan   { background: linear-gradient(135deg, var(--clr-accent), var(--clr-primary)); }
-.pf-testi-avatar.violet { background: linear-gradient(135deg, var(--clr-violet), #5B6EF5); }
+.pf-testi-avatar
 .pf-testi-avatar.green  { background: linear-gradient(135deg, var(--clr-green), #00B890); }
-.pf-testi-avatar.orange { background: linear-gradient(135deg, #FF9632, #CC6420); }
+.pf-testi-avatar
 .pf-testi-avatar.sky    { background: linear-gradient(135deg, #38BDF8, #0EA5E9); }
 .pf-testi-avatar.amber  { background: linear-gradient(135deg, #FBBF24, #D97706); }
 .pf-testi-avatar.rose   { background: linear-gradient(135deg, #F43F5E, #BE123C); }
@@ -631,14 +620,6 @@
   border-bottom: 1px solid var(--clr-border);
   padding-block: var(--space-3);
 }
-
-.pf-filter-inner {
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.pf-filter-inner::-webkit-scrollbar { display: none; }
 
 .pf-filter-tabs {
   display: flex;
@@ -711,8 +692,6 @@
 .pf-card.cs-card.hidden {
   display: none;
 }
-
-
 
 /* Card image */
 .pf-card-image {
@@ -995,14 +974,6 @@
   letter-spacing: 2px;
 }
 
-.pf-testi-text {
-  font-size: var(--text-sm);
-  color: var(--clr-text-2);
-  line-height: 1.75;
-  font-style: italic;
-  flex: 1;
-}
-
 .pf-testi-author {
   display: flex;
   align-items: center;
@@ -1014,13 +985,6 @@
   display: block;
   font-size: var(--text-sm);
   font-weight: 700;
-}
-
-.pf-testi-role {
-  display: block;
-  font-size: var(--text-xs);
-  color: var(--clr-muted);
-  margin-top: 2px;
 }
 
 /* ============================================================
@@ -1078,25 +1042,10 @@
 
 .pf-process-step:hover .pf-step-icon { transform: scale(1.1); }
 
-.pf-step-title {
-  font-family: var(--font-display);
-  font-size: var(--text-base);
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
-
 .pf-step-desc {
   font-size: var(--text-sm);
   color: var(--clr-text-2);
   line-height: 1.6;
-}
-
-.pf-step-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-1);
-  margin-top: var(--space-2);
 }
 
 .pf-step-list li {
@@ -1286,27 +1235,7 @@
   pointer-events: none;
 }
 
-.pf-cta-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-4);
-  justify-content: center;
-  margin-bottom: var(--space-10);
-  position: relative;
-  z-index: 1;
-}
-
 /* WhatsApp btn — same as homepage / services */
-.btn-whatsapp {
-  background: linear-gradient(135deg, #25D366, #128C7E);
-  color: #fff;
-  box-shadow: 0 4px 20px rgba(37,211,102,0.35);
-}
-
-.btn-whatsapp:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(37,211,102,0.5);
-}
 
 .pf-cta-trust {
   display: flex;
@@ -1317,15 +1246,6 @@
   border-top: 1px solid var(--clr-border);
   position: relative;
   z-index: 1;
-}
-
-.pf-trust-item {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  font-size: var(--text-sm);
-  color: var(--clr-text-2);
-  font-weight: 500;
 }
 
 /* ============================================================
@@ -1554,7 +1474,7 @@
   .cs-modal               { max-height: 95vh; }
   .cs-modal-body          { padding: var(--space-5); }
   .cs-modal-metrics       { grid-template-columns: 1fr 1fr; }
-  .pf-cta-actions         { flex-direction: column; }
+
   .pf-cta-actions .btn    { width: 100%; justify-content: center; }
   .cs-feat-card           { border-radius: var(--radius-lg); }
   .pf-industry-card       { flex-direction: row; text-align: left; }

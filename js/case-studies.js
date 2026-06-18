@@ -557,12 +557,7 @@ function initSmoothScroll() {
    ============================================================ */
 document.addEventListener('DOMContentLoaded', () => {
   initFilters();
-  initCounters();
-  initFAQ();
-  initReveal();
-  initProgressBars();
+
   initModal();
-  initMobileNav();
-  initActiveNav();
-  initSmoothScroll();
+
 });

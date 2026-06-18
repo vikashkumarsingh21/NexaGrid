@@ -134,13 +134,11 @@
 
 /* ---- Hero animations ---- */
 @keyframes pr-fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to   { opacity: 1; transform: translateY(0); }
+
 }
 
 @keyframes pr-fadeDown {
-  from { opacity: 0; transform: translateY(-14px); }
-  to   { opacity: 1; transform: translateY(0); }
+
 }
 
 @keyframes pr-glow-pulse {
@@ -488,7 +486,7 @@
   font-size: 11px;
   flex-shrink: 0;
   margin-top: 1px;
-  
+
 }
 
 .pr-feat-yes::before { content: '✓'; }
@@ -574,7 +572,6 @@
 .pr-service-icon.violet { background: rgba(155,111,255,0.12); color: var(--clr-violet);    border: 1px solid rgba(155,111,255,0.25); }
 .pr-service-icon.orange { background: rgba(255,150,50,0.12);  color: #FF9632;              border: 1px solid rgba(255,150,50,0.25); }
 .pr-service-icon.amber  { background: rgba(251,191,36,0.10);  color: #FBBF24;              border: 1px solid rgba(251,191,36,0.20); }
-
 
 .pr-service-block:hover .pr-service-icon {
   transform: scale(1.1);
@@ -1141,10 +1138,6 @@
   width: 0%;
 }
 
-.why-bar-fill.b {
-  background: linear-gradient(90deg, var(--clr-accent), #0099AA);
-}
-
 .why-bar-fill.c {
   background: linear-gradient(90deg, var(--clr-violet), #6640CC);
 }
@@ -1482,7 +1475,6 @@
   justify-content: center;
   margin-top: var(--space-2);
 }
-
 
 /* pr-compare
    Section wrapper for the feature comparison table.

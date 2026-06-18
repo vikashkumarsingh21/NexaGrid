@@ -5,89 +5,25 @@
    ============================================================ */
 
 /* ============ SHARED ANIMATIONS (mirror services.css) ============ */
-@keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: 0.5; transform: scale(0.85); }
-}
-
-@keyframes fadeDown {
-  from { opacity: 0; transform: translateY(-14px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
 
 @keyframes filterFadeIn {
-  from { opacity: 0; transform: scale(0.96) translateY(10px); }
-  to   { opacity: 1; transform: scale(1) translateY(0); }
+
 }
 
 /* ============ ICON COLOUR VARIANTS (mirror services.css) ============ */
-.indigo  { background: rgba(91,110,245,0.15);  color: var(--clr-primary-2); border: 1px solid rgba(91,110,245,0.25);  }
+
 .cyan    { background: rgba(0,229,255,0.1);     color: var(--clr-accent);    border: 1px solid rgba(0,229,255,0.2);   }
-.violet  { background: rgba(155,111,255,0.12);  color: var(--clr-violet);    border: 1px solid rgba(155,111,255,0.25);}
+
 .green   { background: rgba(0,255,178,0.1);     color: var(--clr-green);     border: 1px solid rgba(0,255,178,0.2);  }
-.orange  { background: rgba(255,150,50,0.12);   color: #FF9632;              border: 1px solid rgba(255,150,50,0.25);}
+
 .pink    { background: rgba(255,80,160,0.1);    color: #FF50A0;              border: 1px solid rgba(255,80,160,0.2); }
 .sky     { background: rgba(56,189,248,0.1);    color: #38BDF8;              border: 1px solid rgba(56,189,248,0.2); }
 .amber   { background: rgba(251,191,36,0.1);    color: #FBBF24;              border: 1px solid rgba(251,191,36,0.2); }
 .rose    { background: rgba(244,63,94,0.1);     color: #F43F5E;              border: 1px solid rgba(244,63,94,0.2);  }
 
 /* ============ BUTTON VARIANTS ============ */
-.btn-whatsapp {
-  background: linear-gradient(135deg, #25D366, #128C7E);
-  color: #fff;
-  box-shadow: 0 4px 20px rgba(37,211,102,0.35);
-}
-
-.btn-whatsapp:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(37,211,102,0.5);
-}
-
-.btn-call {
-  background: rgba(0,229,255,0.1);
-  color: var(--clr-accent);
-  border: 1px solid rgba(0,229,255,0.3);
-}
-
-.btn-call:hover {
-  background: rgba(0,229,255,0.18);
-  transform: translateY(-2px);
-}
 
 /* ============ BREADCRUMB (shared with services.css) ============ */
-.breadcrumb {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-2);
-  flex-wrap: wrap;
-  margin-bottom: var(--space-8);
-  font-size: var(--text-sm);
-  color: var(--clr-muted);
-  animation: fadeDown 0.7s var(--ease-out) both;
-}
-
-.breadcrumb a {
-  color: var(--clr-muted);
-  transition: color var(--duration-fast);
-}
-
-.breadcrumb a:hover { color: var(--clr-accent); }
-
-.breadcrumb-sep {
-  color: var(--clr-muted-2);
-  font-size: var(--text-xs);
-}
-
-.breadcrumb-current {
-  color: var(--clr-text-2);
-  font-weight: 500;
-}
 
 /* ============ PORTFOLIO HERO ============ */
 .pf-hero {
@@ -207,14 +143,6 @@
   letter-spacing: -0.02em;
 }
 
-.pf-stat-label {
-  display: block;
-  font-size: var(--text-xs);
-  color: var(--clr-muted);
-  font-weight: 500;
-  margin-top: 2px;
-}
-
 .pf-stat-sep {
   width: 1px;
   height: 36px;
@@ -238,14 +166,6 @@
   border-bottom: 1px solid var(--clr-border);
   padding-block: var(--space-4);
 }
-
-.pf-filter-inner {
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.pf-filter-inner::-webkit-scrollbar { display: none; }
 
 .pf-filter-tabs {
   display: flex;
@@ -422,11 +342,11 @@
 }
 
 /* Reuse colour classes defined above */
-.pf-industry-tag.indigo { background: rgba(91,110,245,0.12);  color: var(--clr-primary-2); border: 1px solid rgba(91,110,245,0.22); }
+.pf-industry-tag
 .pf-industry-tag.cyan   { background: rgba(0,229,255,0.09);   color: var(--clr-accent);    border: 1px solid rgba(0,229,255,0.18); }
-.pf-industry-tag.violet { background: rgba(155,111,255,0.1);  color: var(--clr-violet);    border: 1px solid rgba(155,111,255,0.22);}
+.pf-industry-tag
 .pf-industry-tag.green  { background: rgba(0,255,178,0.09);   color: var(--clr-green);     border: 1px solid rgba(0,255,178,0.18); }
-.pf-industry-tag.orange { background: rgba(255,150,50,0.1);   color: #FF9632;              border: 1px solid rgba(255,150,50,0.22);}
+.pf-industry-tag
 .pf-industry-tag.pink   { background: rgba(255,80,160,0.09);  color: #FF50A0;              border: 1px solid rgba(255,80,160,0.18);}
 .pf-industry-tag.sky    { background: rgba(56,189,248,0.09);  color: #38BDF8;              border: 1px solid rgba(56,189,248,0.18);}
 .pf-industry-tag.amber  { background: rgba(251,191,36,0.09);  color: #FBBF24;              border: 1px solid rgba(251,191,36,0.18);}
@@ -836,14 +756,6 @@
   letter-spacing: 2px;
 }
 
-.pf-testi-text {
-  font-size: var(--text-sm);
-  color: var(--clr-text-2);
-  line-height: 1.75;
-  font-style: italic;
-  flex: 1;
-}
-
 .pf-testi-author {
   display: flex;
   align-items: center;
@@ -871,13 +783,6 @@
   font-weight: 700;
   color: var(--clr-text);
   font-style: normal;
-}
-
-.pf-testi-role {
-  display: block;
-  font-size: var(--text-xs);
-  color: var(--clr-muted);
-  margin-top: 2px;
 }
 
 /* ============ PROCESS SECTION ============ */
@@ -974,25 +879,10 @@
   flex: 1;
 }
 
-.pf-step-title {
-  font-family: var(--font-display);
-  font-size: var(--text-base);
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
-
 .pf-step-desc {
   font-size: var(--text-sm);
   color: var(--clr-muted);
   line-height: 1.6;
-}
-
-.pf-step-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-1);
-  margin-top: var(--space-2);
 }
 
 .pf-step-list li {
@@ -1050,16 +940,6 @@
   font-size: clamp(var(--text-3xl), 4.5vw, var(--text-5xl));
 }
 
-.pf-cta-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-4);
-  justify-content: center;
-  margin-bottom: var(--space-10);
-  position: relative;
-  z-index: 1;
-}
-
 .pf-cta-trust {
   display: flex;
   flex-wrap: wrap;
@@ -1069,15 +949,6 @@
   border-top: 1px solid var(--clr-border);
   position: relative;
   z-index: 1;
-}
-
-.pf-trust-item {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  font-size: var(--text-sm);
-  color: var(--clr-text-2);
-  font-weight: 500;
 }
 
 @media (max-width: 640px) {

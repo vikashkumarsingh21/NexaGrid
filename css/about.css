@@ -117,30 +117,6 @@
 }
 
 /* ---- Animations (only defined here if not already in home.css) ---- */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeDown {
-  from { opacity: 0; transform: translateY(-12px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeLeft {
-  from { opacity: 0; transform: translateX(32px); }
-  to   { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50%       { transform: translateY(-8px); }
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: 0.5; transform: scale(0.85); }
-}
 
 /* ---- Responsive ---- */
 @media (max-width: 960px) {
@@ -159,7 +135,6 @@
 @media (max-width: 520px) {
   .about-hero { min-height: auto; padding-bottom: var(--space-12); }
 }
-
 
 /* ============================================================
    2. OUR STORY — TIMELINE
@@ -293,7 +268,6 @@
 @media (max-width: 480px) {
   .timeline-card { padding: var(--space-5) var(--space-6); }
 }
-
 
 /* ============================================================
    3. MISSION & VISION
@@ -461,7 +435,6 @@
   .mv-purpose-strip { padding: var(--space-6); }
 }
 
-
 /* ============================================================
    4. CORE VALUES
    ============================================================ */
@@ -489,7 +462,6 @@
   color: var(--clr-muted);
   line-height: 1.75;
 }
-
 
 /* ============================================================
    5. WHY CHOOSE — extended right column
@@ -578,7 +550,6 @@
   .why-extra-cards { grid-template-columns: 1fr; }
 }
 
-
 /* ============================================================
    6. OUR EXPERTISE
    (services-grid & service-card from home.css)
@@ -586,18 +557,15 @@
 .expertise-section { background: var(--clr-bg-2); }
 /* No additional rules needed — reuses home.css service-card anatomy */
 
-
 /* ============================================================
    7. COMPANY METRICS
    (stats-strip from home.css — reused as-is)
    ============================================================ */
 .about-stats { background: var(--clr-bg-3); }
 
-
 /* ============================================================
    8. OUR PROCESS
    ============================================================ */
-.process-section { background: var(--clr-bg); }
 
 .process-grid {
   display: grid;
@@ -700,11 +668,9 @@
   .process-grid { grid-template-columns: 1fr; }
 }
 
-
 /* ============================================================
    9. INDUSTRIES WE SERVE
    ============================================================ */
-.industries-section { background: var(--clr-bg-2); }
 
 .industries-grid {
   display: grid;
@@ -744,7 +710,6 @@
 @media (max-width: 1000px) { .industries-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 700px)  { .industries-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 440px)  { .industries-grid { grid-template-columns: 1fr; } }
-
 
 /* ============================================================
    10. TESTIMONIALS
@@ -796,11 +761,6 @@
 }
 
 /* Author row */
-.testimonial-author {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-}
 
 .testimonial-avatar {
   width: 44px;
@@ -835,7 +795,6 @@
 @media (max-width: 960px) { .testimonials-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 600px) { .testimonials-grid { grid-template-columns: 1fr; } }
 
-
 /* ============================================================
    11. FAQ
    (faq-item, faq-question, faq-arrow, faq-answer,
@@ -859,14 +818,12 @@
   border-radius: var(--radius-sm);
 }
 
-
 /* ============================================================
    12. FINAL CTA
    (cta-section, cta-box, cta-actions, btn-whatsapp
     all defined in home.css — reused as-is)
    ============================================================ */
 /* No extra rules needed; the about.html CTA reuses all home.css CTA classes. */
-
 
 /* ============================================================
    GLOBAL: Accessibility & Motion
@@ -891,7 +848,6 @@
 
 /* Reduced motion override handled globally in main.css */
 
-
    Wrapper for the 6 value cards.
    about.css comments say "Reuse services-grid" but never defines it. */
 .values-grid {
@@ -902,7 +858,6 @@
 
 @media (max-width: 960px) { .values-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 600px) { .values-grid { grid-template-columns: 1fr; } }
-
 
 /* value-icon
    Icon element inside .value-card.
@@ -925,7 +880,6 @@
 .value-icon.green  { background: rgba(0,255,178,0.1);    color: var(--clr-green);     border: 1px solid rgba(0,255,178,0.2);  }
 .value-icon.orange { background: rgba(255,150,50,0.12);  color: #FF9632;              border: 1px solid rgba(255,150,50,0.25);}
 .value-icon.pink   { background: rgba(255,80,160,0.1);   color: #FF50A0;              border: 1px solid rgba(255,80,160,0.2); }
-
 
 /* timeline-line
    Vertical connector line inside .timeline-marker, drawn between dots. */

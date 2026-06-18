@@ -844,3 +844,110 @@ input, textarea, select {
         height:55px;
     }
 }
+/* --- Consolidated Shared Styles --- */
+from { opacity: 0; transform: translateY(24px); }
+to { opacity: 1; transform: translateY(0); }
+from { opacity: 0; transform: translateY(-12px); }
+from { opacity: 0; transform: translateX(32px); }
+to { opacity: 1; transform: translateX(0); }
+0%, 100% { transform: translateY(0px); }
+50% { transform: translateY(-8px); }
+0%, 100% { opacity: 1; transform: scale(1); }
+50% { opacity: 0.5; transform: scale(0.85); }
+.process-section { background: var(--clr-bg); }
+.industries-section { background: var(--clr-bg-2); }
+.testimonial-author { display: flex; align-items: center; gap: var(--space-3); }
+.indigo { background: rgba(91,110,245,0.15); color: var(--clr-primary-2); border: 1px solid rgba(91,110,245,0.25); }
+.violet { background: rgba(155,111,255,0.12); color: var(--clr-violet); border: 1px solid rgba(155,111,255,0.25); }
+.orange { background: rgba(255,150,50,0.12); color: #FF9632; border: 1px solid rgba(255,150,50,0.25); }
+from { opacity: 0; transform: translateY(-14px); }
+.pf-stat-label { display: block; font-size: var(--text-xs); color: var(--clr-muted); font-weight: 500; margin-top: 2px; }
+.pf-filter-inner { overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; }
+.pf-filter-inner::-webkit-scrollbar { display: none; }
+.pf-testi-text { font-size: var(--text-sm); color: var(--clr-text-2); line-height: 1.75; font-style: italic; flex: 1; }
+.pf-testi-role { display: block; font-size: var(--text-xs); color: var(--clr-muted); margin-top: 2px; }
+.pf-step-title { font-family: var(--font-display); font-size: var(--text-base); font-weight: 700; letter-spacing: -0.01em; }
+.pf-step-list { list-style: none; display: flex; flex-direction: column; gap: var(--space-1); margin-top: var(--space-2); }
+.pf-cta-actions { display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center; margin-bottom: var(--space-10); position: relative; z-index: 1; }
+.btn-whatsapp { background: linear-gradient(135deg, #25D366, #128C7E); color: #fff; box-shadow: 0 4px 20px rgba(37,211,102,0.35); }
+.btn-whatsapp:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(37,211,102,0.5); }
+.pf-trust-item { display: flex; align-items: center; gap: var(--space-2); font-size: var(--text-sm); color: var(--clr-text-2); font-weight: 500; }
+.why-bar-fill.b { background: linear-gradient(90deg, var(--clr-accent), #0099AA); }
+.btn-call { background: rgba(0,229,255,0.1); color: var(--clr-accent); border: 1px solid rgba(0,229,255,0.3); }
+.btn-call:hover { background: rgba(0,229,255,0.18); transform: translateY(-2px); }
+.breadcrumb { display: flex; align-items: center; justify-content: center; gap: var(--space-2); flex-wrap: wrap; margin-bottom: var(--space-8); font-size: var(--text-sm); color: var(--clr-muted); animation: fadeDown 0.7s var(--ease-out) both; }
+.breadcrumb a { color: var(--clr-muted); transition: color var(--duration-fast); }
+.breadcrumb a:hover { color: var(--clr-accent); }
+.breadcrumb-sep { color: var(--clr-muted-2); font-size: var(--text-xs); }
+.breadcrumb-current { color: var(--clr-text-2); font-weight: 500; }
+.svc-detail:nth-child(even) .svc-detail-inner > * { direction: ltr; }
+
+/* --- Consolidated Shared Styles --- */
+@keyframes fadeUp {  }
+@keyframes fadeDown {  }
+@keyframes fadeLeft {  }
+@keyframes float {  }
+@keyframes pulse {  }
+
+/* --- Accessibility & Layout Fixes --- */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: var(--clr-primary, #000);
+  color: #fff;
+  padding: 10px 15px;
+  z-index: 9999;
+  transition: top 0.2s ease;
+  text-decoration: none;
+  font-weight: bold;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* --- Accessibility & Layout Fixes --- */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: var(--clr-primary, #000);
+  color: #fff;
+  padding: 10px 15px;
+  z-index: 9999;
+  transition: top 0.2s ease;
+  text-decoration: none;
+  font-weight: bold;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* --- Accessibility & Layout Fixes --- */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: var(--clr-primary, #000);
+  color: #fff;
+  padding: 10px 15px;
+  z-index: 9999;
+  transition: top 0.2s ease;
+  text-decoration: none;
+  font-weight: bold;
+}
+.skip-link:focus {
+  top: 0;
+}

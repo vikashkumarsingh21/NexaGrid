@@ -71,11 +71,6 @@
   animation: pulse 2s ease-in-out infinite;
 }
 
-@keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.5; transform: scale(0.85); }
-}
-
 .hero-title {
   font-family: var(--font-display);
   font-size: clamp(2.5rem, 6vw, 4.5rem);
@@ -217,7 +212,7 @@
 }
 
 @keyframes progressLoad {
-  from { width: 0%; }
+
 }
 
 .hero-floating-tag {
@@ -246,26 +241,6 @@
 .hero-floating-tag.tag-bottom-right {
   bottom: -16px;
   right: -24px;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
-}
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeDown {
-  from { opacity: 0; transform: translateY(-12px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeLeft {
-  from { opacity: 0; transform: translateX(32px); }
-  to   { opacity: 1; transform: translateX(0); }
 }
 
 @media (max-width: 960px) {
@@ -536,7 +511,7 @@
 }
 
 .why-bar-fill.a { background: var(--grad-primary); }
-.why-bar-fill.b { background: linear-gradient(90deg, var(--clr-accent), #0099AA); }
+
 .why-bar-fill.c { background: linear-gradient(90deg, var(--clr-violet), #7040CC); }
 
 .why-bar-row span:last-child {
@@ -753,7 +728,6 @@
 }
 
 /* ============ PROCESS ============ */
-.process-section { background: var(--clr-bg); }
 
 .process-track {
   display: grid;
@@ -832,7 +806,6 @@
 }
 
 /* ============ INDUSTRIES ============ */
-.industries-section { background: var(--clr-bg-2); }
 
 .industries-grid {
   display: grid;
@@ -931,12 +904,6 @@
   line-height: 1.75;
   margin-bottom: var(--space-6);
   font-style: italic;
-}
-
-.testimonial-author {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
 }
 
 .author-avatar {
@@ -1086,29 +1053,6 @@
   gap: var(--space-4);
   justify-content: center;
 }
-
-.btn-whatsapp {
-  background: linear-gradient(135deg, #25D366, #128C7E);
-  color: #fff;
-  box-shadow: 0 4px 20px rgba(37,211,102,0.35);
-}
-
-.btn-whatsapp:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(37,211,102,0.5);
-}
-
-.btn-call {
-  background: rgba(0,229,255,0.1);
-  color: var(--clr-accent);
-  border: 1px solid rgba(0,229,255,0.3);
-}
-
-.btn-call:hover {
-  background: rgba(0,229,255,0.18);
-  transform: translateY(-2px);
-}
-
 
 /* faq-left
    Left column inside .faq-inner (1fr 2fr grid).

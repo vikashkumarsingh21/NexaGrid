@@ -44,34 +44,6 @@
 }
 
 /* Breadcrumb */
-.breadcrumb {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-2);
-  flex-wrap: wrap;
-  margin-bottom: var(--space-8);
-  font-size: var(--text-sm);
-  color: var(--clr-muted);
-  animation: fadeDown 0.7s var(--ease-out) both;
-}
-
-.breadcrumb a {
-  color: var(--clr-muted);
-  transition: color var(--duration-fast);
-}
-
-.breadcrumb a:hover { color: var(--clr-accent); }
-
-.breadcrumb-sep {
-  color: var(--clr-muted-2);
-  font-size: var(--text-xs);
-}
-
-.breadcrumb-current {
-  color: var(--clr-text-2);
-  font-weight: 500;
-}
 
 .svc-hero-badge {
   display: inline-flex;
@@ -95,21 +67,6 @@
   border-radius: 50%;
   background: var(--clr-accent);
   box-shadow: 0 0 8px var(--clr-accent);
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: 0.5; transform: scale(0.85); }
-}
-
-@keyframes fadeDown {
-  from { opacity: 0; transform: translateY(-14px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to   { opacity: 1; transform: translateY(0); }
 }
 
 .svc-hero-title {
@@ -315,10 +272,6 @@
   direction: rtl;
 }
 
-.svc-detail:nth-child(even) .svc-detail-inner > * {
-  direction: ltr;
-}
-
 .svc-detail-content {}
 
 .svc-detail-number {
@@ -499,11 +452,7 @@
   flex-wrap: wrap;
 }
 
-.svc-price-from {
-  font-size: var(--text-xs);
-  color: var(--clr-muted);
-  margin-bottom: 4px;
-}
+.svc-price-
 
 .svc-price-amount {
   font-family: var(--font-display);
@@ -525,9 +474,7 @@
     grid-template-columns: 1fr;
     direction: ltr !important;
   }
-  .svc-detail:nth-child(even) .svc-detail-inner > * {
-    direction: ltr;
-  }
+
 }
 
 @media (max-width: 480px) {
@@ -687,27 +634,6 @@
 }
 
 /* WhatsApp & Call buttons — same as homepage */
-.btn-whatsapp {
-  background: linear-gradient(135deg, #25D366, #128C7E);
-  color: #fff;
-  box-shadow: 0 4px 20px rgba(37,211,102,0.35);
-}
-
-.btn-whatsapp:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(37,211,102,0.5);
-}
-
-.btn-call {
-  background: rgba(0,229,255,0.1);
-  color: var(--clr-accent);
-  border: 1px solid rgba(0,229,255,0.3);
-}
-
-.btn-call:hover {
-  background: rgba(0,229,255,0.18);
-  transform: translateY(-2px);
-}
 
 /* Trust badges row inside CTA */
 .svc-cta-trust {
